@@ -18,8 +18,6 @@ public class CustomerAuthenticationFailureHandler implements AuthenticationFailu
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
-        // Check that the response was not committed yet (this may happen when another
-        // part of the Keycloak adapter sends a challenge or a redirect).
         authenticationEntryPoint.commence(request, response, exception);
     }
 }
