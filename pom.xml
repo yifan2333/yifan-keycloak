@@ -22,6 +22,7 @@
 
     <modules>
         <module>yifan-keycloak-web</module>
+        <module>yifan-keycloak-spring-security</module>
     </modules>
 
 <!--    <dependencyManagement>-->
